@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>test-validate-types</title>
+</head>
+<body>
+<script>
+var typ = function(elem){
+    return (elem === null) ? "null" : (elem === undefined) ? "undefined" : elem.constructor.toString().replace("function ","").replace("() { [native code] }","").toLowerCase();
+}
+</script>
+</body>
+</html>
