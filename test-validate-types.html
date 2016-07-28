@@ -8,6 +8,15 @@
 var typ = function(elem){
     return (elem === null) ? "null" : (elem === undefined) ? "undefined" : elem.constructor.toString().replace("function ","").replace("() { [native code] }","").toLowerCase();
 }
+console.assert(typ(null)         === "null",     "a jendak nie null");
+console.assert(typ(undefined)    === "undefined","a jednak nie undefined");
+console.assert(typ(0)            === "number",   "a jednak nie number");
+console.assert(typ(true)         === "boolean",  "a jednak nie boolean");
+console.assert(typ("")           === "string",   "a jednak nie string");
+console.assert(typ(/a/g)         === "regexp",   "a jednak nie regexp");
+console.assert(typ(Object())     === "object",   "a jednak nie object");
+console.assert(typ(function(){}) === "function", "a jednak nie function");
+console.assert(typ([])           === "array",    "a jednak nie array");
 </script>
 </body>
 </html>
