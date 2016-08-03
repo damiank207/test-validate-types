@@ -13,9 +13,3 @@ Możliwe typy to:
  - object
  - function
  - array
-
-Na każde zadanie musisz zrobić nowe repozytorium w stylu: test-validate-types (gitHub)
-
-Jakich nazw użyjesz to na razie Twoja sprawa.
-
-Po skończonej implementacji - odpowiadasz mi na tego maila.
