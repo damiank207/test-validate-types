@@ -1,0 +1,10 @@
+var tester = new validateTypes();
+console.assert(tester.typ(null)         === "null",     "a jendak nie null");
+console.assert(tester.typ(undefined)    === "undefined","a jednak nie undefined");
+console.assert(tester.typ(0)            === "number",   "a jednak nie number");
+console.assert(tester.typ(true)         === "boolean",  "a jednak nie boolean");
+console.assert(tester.typ("")           === "string",   "a jednak nie string");
+console.assert(tester.typ(/a/g)         === "regexp",   "a jednak nie regexp");
+console.assert(tester.typ(Object())     === "object",   "a jednak nie object");
+console.assert(tester.typ(function(){}) === "function", "a jednak nie function");
+console.assert(tester.typ([])           === "array",    "a jednak nie array");
